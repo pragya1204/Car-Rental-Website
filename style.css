@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{.
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,57 +9,68 @@
     list-style: none;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
+    background: #eeeff1;
 }
-:root{
+
+:root {
     --main-color: #fe5b3d;
-    --second-color:#ffac38;
-    --text-color:#444;
-    --gradient:linear-gradient(#fe5b3d, #ffac38);
+    --second-color: #ffac38;
+    --text-color: #444;
+    --gradient: linear-gradient(#fe5b3d, #ffac38);
 }
+
 /* Custom Scroll Bar */
-html::-webkit-scrollbar{
+html::-webkit-scrollbar {
     width: 0.5rem;
 }
-html ::-webkit-scrollbar-track{
-    background: transparent ;
+
+html ::-webkit-scrollbar-track {
+    background: transparent;
 }
-html ::-webkit-scrollbar-thumb{
+
+html ::-webkit-scrollbar-thumb {
     background: var(--main-color);
     border-radius: 5rem;
 }
-section{
+
+section {
     padding: 50px 100px;
 }
-header{
+
+header {
     position: fixed;
     width: 100%;
     top: 0;
     right: 0;
     z-index: 1000;
     display: flex;
-    align-items:center ;
+    align-items: center;
     justify-content: space-between;
     background: #eeeff1;
     padding: 15px 100px;
 
 }
 
-.logo img{
+.logo img {
     width: 40px;
 }
-.navbar{
+
+.navbar {
     display: flex;
 }
-.navbar li{
+
+.navbar li {
     position: relative;
 }
-.navbar a{
+
+.navbar a {
     font-size: 1rem;
     padding: 10px 20px;
     color: var(--text-color);
     font-weight: 500;
 }
-.navbar a::after{
+
+.navbar a::after {
     content: "";
     width: 0%;
     height: 3px;
@@ -68,60 +80,71 @@ header{
     left: 0;
     transition: 0.5s
 }
-.navbar a:hover::after{
+
+.navbar a:hover::after {
     width: 100%;
 }
-#menu-icon{
+
+#menu-icon {
     font-size: 24px;
     cursor: pointer;
     z-index: 10001;
-    display:none;
+    display: none;
 }
-.header-btn a{
+
+.header-btn a {
     padding: 10px 20px;
     color: var(--text-color);
     font-weight: 500;
 
 }
-.header-btn .sign-in{
+
+.header-btn .sign-in {
     background: #474fa0;
     color: #fff;
     border-radius: 0.5rem;
 }
-.header-btn .sign-in:hover{
+
+.header-btn .sign-in:hover {
     background: var(--main-color);
 }
-.home{
+
+.home {
     width: 100%;
     min-height: 100vh;
     position: relative;
     background: url(img/Car\ Website\ –\ 1@2x.png);
     background-repeat: no-repeat;
     background-position: center right;
-    background-size:cover ;
+    background-size: cover;
     display: grid;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
 
 }
-.text h1{
+
+.text h1 {
     font-size: 3.5rem;
     letter-spacing: 2px;
 }
-.text span{
+
+.text span {
     color: var(--main-color);
 }
-.text p{
+
+.text p {
     margin: 00.5rem 0 1rem;
 }
-.app-stores img{
+
+.app-stores img {
     width: 100px;
     margin-right: 1rem;
     cursor: pointer;
 }
-.form-container form{
+
+.form-container form {
     display: flex;
-    flex-wrap:wrap ;
+    flex-wrap: wrap;
     align-items: center;
     gap: 1rem;
     position: absolute;
@@ -131,15 +154,18 @@ header{
     padding: 20px;
     border-radius: 0.5rem;
 }
-.input-box{
+
+.input-box {
     flex: 1 1 7rem;
     display: flex;
     flex-direction: column;
 }
-.input-box span{
+
+.input-box span {
     font-weight: 500;
 }
-.input-box input{
+
+.input-box input {
     padding: 7px;
     outline: none;
     border: none;
@@ -147,9 +173,10 @@ header{
     border-radius: 0.5rem;
     font-size: 1rem;
 }
-.form-container form .btn{
+
+.form-container form .btn {
     flex: 1 1 7rem;
-    padding: 10px 34px ;
+    padding: 10px 34px;
     border: none;
     border-radius: 0.5rem;
     background: #474fa0;
@@ -157,6 +184,233 @@ header{
     font-size: 1rem;
     font-weight: 500;
 }
-.form-container form .btn:hover{
+
+.form-container form .btn:hover {
     background: var(--main-color);
+}
+
+.heading {
+    text-align: center;
+}
+
+.ride .heading span {
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.ride-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+.ride-options .option {
+    text-align: center;
+}
+
+.ride-options .option span {
+    font-weight: 600;
+}
+
+.ride-options .option p {
+    color: var(--text-color);
+}
+
+.ride-options .option div i {
+
+    border: transparent;
+    color: var(--main-color);
+    font-size: 2rem;
+    opacity: 1;
+
+}
+
+.ride-options .option div i:hover {
+    font-size: 2.5rem;
+}
+
+.ride-options .option div {
+    text-align: center;
+    margin-left: 45%;
+    margin-bottom: 1rem;
+    width: 30px;
+    height: 30px;
+    border: transparent;
+    background-color: rgb(232, 236, 240);
+}
+
+.services {
+    /* padding-right: 3rem; */
+}
+
+/* comment for myself :::::Check out about grid display again */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.services-container .box {
+    padding: 10px;
+    border-radius: 1rem;
+    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+}
+
+.services-container .box .box-img {
+    width: 100%;
+    height: 200px;
+}
+
+.services-container .box .box-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    object-position: center;
+    object-fit: cover;
+}
+
+.services-container .box p {
+    padding: 0 10px;
+    border: 1px solid var(--text-color);
+    width: 58px;
+    border-radius: 0.5rem;
+    margin: 1rem 0 1rem;
+}
+
+.services-container .box h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--main-color);
+    margin: 0.2rem 0 0 0.5rem;
+}
+
+.services-container .box h2 span {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.services-container .box .btn {
+    display: flex;
+    justify-content: center;
+    background: #474fa0;
+    color: #fff;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+.services-container .box  .btn :hover{
+    background: var(--main-color);
+}
+.about{
+    margin-top: 7rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.about .car-img img{
+    width: 100%;
+    height: 500px;
+}
+.about .about-section h3{
+    color: var(--main-color);
+    font-weight: 600;
+}
+.about .about-section p{
+    color: var(--text-color);
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+}
+.about .about-section .about-btn{
+    color: #fff;
+    background: #474fa0;
+    border-radius: 0.5rem;
+    padding: 10px;
+}
+.about .about-section .about-btn:hover{
+    background: var(--main-color);
+}
+
+.review-container{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+.review-container .review-box{
+    border-radius: 10px;
+    box-shadow: 1px 1px 41px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.review-container .review-box .review-img{
+    padding: 1rem;
+}
+.review-container .review-box img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.review-container .review-box h3{
+    margin-top: 0.25rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.review-container .review-box p{
+    font-size: 0.8rem;
+    color: var(--text-color);
+    padding: 0 1rem 0 1rem;
+}
+.review-container .review-box .stars i{
+    color: var(--main-color);
+}
+
+.newsletter{
+    background: linear-gradient(to top right, #fe5b3d, #ffac38);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.newsletter h2{
+    color: #fff;
+    font-size: 1.8rem;
+    background: none;
+
+}
+.newsletter .box{
+    margin-top: 1rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    padding: 4px 8px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+.newsletter .box input{
+    border: none;
+    outline: none;
+}
+.newsletter .box .btn{
+    background: #474fa0;
+    color: #fff;
+    padding: 8px 20px ;
+    border-radius: 0.5rem;
+}
+.newsletter .box .btn:hover{
+    background: var(--main-color);
+}
+.copyright{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright p{
+    font-size: 0.8rem;
+    color: var(--text-color);
+}
+.social a{
+    color: #444;
+    padding: 10px;
+    font-size: 21px;
 }
